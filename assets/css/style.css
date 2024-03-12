@@ -1,10 +1,3 @@
-/**
-* Template Name: TheEvent
-* Updated: Feb 06 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -16,7 +9,7 @@ body {
 }
 
 a {
-  color: #f82249;
+  color: #0a075f;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -24,7 +17,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #f8234a;
+  color: #0a075f;
   outline: none;
   text-decoration: none;
 }
@@ -73,7 +66,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #f82249;
+  background: #0a075f;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -87,7 +80,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #f94a6a;
+  background: #4a6df9;
   color: #fff;
 }
 
@@ -110,7 +103,7 @@ h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #f82249;
+  background: #0a075f;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -175,12 +168,12 @@ h6 {
 }
 
 #header #logo h1 span {
-  color: #f82249;
+  color: white;
 }
 
 #header #logo h1 a,
 #header #logo h1 a:hover {
-  color: #fff;
+  color: white;
 }
 
 #header #logo img {
@@ -200,11 +193,11 @@ h6 {
 --------------------------------------------------------------*/
 .buy-tickets {
   color: #fff;
-  background: #f82249;
+  background: #0a075f;
   padding: 7px 22px;
   margin: 0 0 0 15px;
   border-radius: 50px;
-  border: 2px solid #f82249;
+  border: 2px solid #0a075f;
   transition: all ease-in-out 0.3s;
   font-weight: 500;
   line-height: 1;
@@ -283,7 +276,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #f82249;
+  background-color: #0a075f;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -335,7 +328,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #f82249;
+  color: #0a075f;
 }
 
 .navbar .dropdown:hover>ul {
@@ -440,7 +433,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #f82249;
+  color: #0a075f;
 }
 
 .navbar-mobile .getstarted,
@@ -475,7 +468,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #f82249;
+  color: #0a075f;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -494,13 +487,36 @@ h6 {
   position: relative;
 }
 
+.heros {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/subscribe-bg.jpg) top center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
+.heros {
+  background-attachment: fixed;
+}
+
 }
 
 #hero:before {
+  content: "";
+  background: rgba(6, 12, 34, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.heros:before {
   content: "";
   background: rgba(6, 12, 34, 0.8);
   position: absolute;
@@ -524,8 +540,26 @@ h6 {
   padding: 0 15px;
 }
 
+.heros .hero-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 90px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
 @media (max-width: 991px) {
   #hero .hero-container {
+    top: 70px;
+  }
+
+  .heros .hero-container {
     top: 70px;
   }
 }
@@ -538,13 +572,27 @@ h6 {
   text-transform: uppercase;
 }
 
-#hero h1 span {
-  color: #f82249;
+.heros h1 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
+#hero h1 span {
+  color: #fcfcfc;
+}
+
+.heros h1 span {
+  color: #fcfcfc;
+}
 @media (max-width: 991px) {
   #hero h1 {
     font-size: 34px;
+  }
+  .heros h1 {
+    font-size: 28px;
   }
 }
 
@@ -554,8 +602,19 @@ h6 {
   font-size: 20px;
 }
 
+
+
+
+.heros p {
+  color: #ebebeb;
+  font-weight: 700;
+  font-size: 20px;
+}
 @media (max-width: 991px) {
   #hero p {
+    font-size: 16px;
+  }
+  .heros p {
     font-size: 16px;
   }
 }
@@ -563,7 +622,17 @@ h6 {
 #hero .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#f82249 50%, rgba(101, 111, 150, 0.15) 52%);
+  background: radial-gradient(#0a075f 50%, rgba(101, 111, 150, 0.15) 52%);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.heros .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#0a075f 50%, rgba(101, 111, 150, 0.15) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -571,6 +640,23 @@ h6 {
 }
 
 #hero .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+
+
+.heros .play-btn::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -603,8 +689,27 @@ h6 {
   background: rgba(198, 16, 0, 0);
 }
 
+.heros .play-btn:before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation: pulsate-btn 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 2px solid rgba(163, 163, 163, 0.4);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+
 #hero .play-btn:hover::after {
-  border-left: 15px solid #f82249;
+  border-left: 15px solid #0a075f;
   transform: scale(20);
 }
 
@@ -638,11 +743,27 @@ h6 {
   margin: 10px;
   color: #fff;
   animation-delay: 0.8s;
-  border: 2px solid #f82249;
+  border: 2px solid #0a075f;
+}
+
+.heros .about-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  animation-delay: 0.8s;
+  border: 2px solid #0a075f;
 }
 
 #hero .about-btn:hover {
-  background: #f82249;
+  background: #0a075f;
   color: #fff;
 }
 
@@ -759,7 +880,7 @@ h6 {
 }
 
 #speakers .speaker .details a:hover {
-  color: #f82249;
+  color: #0a075f;
 }
 
 #speakers .speaker:hover .details {
@@ -796,7 +917,7 @@ h6 {
 }
 
 #speakers-details .details .social a:hover {
-  background: #f82249;
+  background: #0a075f;
   color: #fff;
 }
 
@@ -859,7 +980,7 @@ h6 {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #f82249;
+  background-color: #0a075f;
   color: #fff;
 }
 
@@ -1043,7 +1164,7 @@ h6 {
 }
 
 #hotels a:hover {
-  color: #f82249;
+  color: #0a075f;
 }
 
 #hotels .stars {
@@ -1081,11 +1202,11 @@ h6 {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #f82249;
+  border: 1px solid #0a075f;
 }
 
 #gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #f82249;
+  background-color: #0a075f;
 }
 
 #gallery .swiper-slide-active {
@@ -1098,7 +1219,7 @@ h6 {
   }
 
   #gallery .swiper-slide-active {
-    border: 5px solid #f82249;
+    border: 5px solid #0a075f;
     padding: 4px;
     background: #fff;
     z-index: 1;
@@ -1161,7 +1282,7 @@ h6 {
 #faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #f82249;
+  font-family: #0a075f;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1192,7 +1313,7 @@ h6 {
 }
 
 #faq .faq-list .collapsed:hover {
-  color: #f82249;
+  color: #0a075f;
 }
 
 #faq .faq-list .collapsed .icon-show {
@@ -1258,7 +1379,7 @@ h6 {
   border: 0;
   padding: 9px 25px;
   cursor: pointer;
-  background: #f82249;
+  background: #0a075f;
   color: #fff;
   transition: all 0.3s ease;
   outline: none;
@@ -1323,7 +1444,7 @@ h6 {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #f82249;
+  background-color: #0a075f;
   border: 0;
   color: #fff;
 }
@@ -1342,7 +1463,7 @@ h6 {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #f82249;
+  background-color: #0a075f;
   border: 0;
   color: #fff;
 }
@@ -1367,7 +1488,7 @@ h6 {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #f82249;
+  color: #0a075f;
 }
 
 #contact .contact-info address,
@@ -1389,7 +1510,7 @@ h6 {
 }
 
 #contact .contact-info a:hover {
-  color: #f82249;
+  color: #0a075f;
 }
 
 #contact .contact-address,
@@ -1464,7 +1585,7 @@ h6 {
 
 #contact .php-email-form input:focus,
 #contact .php-email-form textarea:focus {
-  border-color: #f82249;
+  border-color: #0a075f;
 }
 
 #contact .php-email-form input {
@@ -1476,7 +1597,7 @@ h6 {
 }
 
 #contact .php-email-form button[type=submit] {
-  background: #f82249;
+  background: #0a075f;
   border: 0;
   padding: 10px 40px;
   color: #fff;
@@ -1503,14 +1624,14 @@ h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #101522;
+  background: #1b397e;
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #040919;
+  background: #1b397e;
   padding: 60px 0 30px 0;
 }
 
@@ -1543,8 +1664,8 @@ h6 {
 
 #footer .footer-top .social-links a {
   display: inline-block;
-  background: #222636;
-  color: #eee;
+  background: #ffffff;
+  color: #222636;
   line-height: 1;
   margin-right: 4px;
   border-radius: 50%;
@@ -1562,7 +1683,7 @@ h6 {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #f82249;
+  background: #0a075f;
   color: #fff;
 }
 
@@ -1573,7 +1694,7 @@ h6 {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #f82249;
+  border-bottom: 2px solid #0a075f;
 }
 
 #footer .footer-top .footer-links {
@@ -1588,7 +1709,7 @@ h6 {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #f82249;
+  color: #0a075f;
   font-size: 18px;
 }
 
@@ -1606,7 +1727,7 @@ h6 {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #f82249;
+  color: #0a075f;
 }
 
 #footer .footer-top .footer-contact {
@@ -1628,7 +1749,7 @@ h6 {
 }
 
 #footer .footer-top .footer-newsletter input[type=submit] {
-  background: #f82249;
+  background: #0a075f;
   border: 0;
   width: 35%;
   padding: 6px 0;
