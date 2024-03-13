@@ -1,0 +1,537 @@
+
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="#">
+    <meta name="author" content="TheoPortfolio">
+    <meta name="generator" content="#">
+    <title>EventMarkett</title>
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+   <!-- Vendor CSS Files -->
+   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+   <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+  <!-- Option 1: Include in HTML -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+
+
+
+    <style>
+    .icon-hover:hover {
+  border-color: #3b71ca !important;
+  background-color: white !important;
+}
+
+.icon-hover:hover i {
+  color: #3b71ca !important;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* This creates a circle */
+  background-color: white; /* You can change the background color */
+}
+
+
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.service-11 {
+  font-family: "Montserrat", sans-serif;
+	color: #8d97ad;
+  font-weight: 300;
+}
+
+.service-11 h1, .service-11 h2, .service-11 h3, .service-11 h4, .service-11 h5, .service-11 h6 {
+  color: #3e4555;
+}
+
+.service-11 .font-weight-medium {
+	font-weight: 500;
+}
+
+.service-11 .bg-light {
+    background-color: #f4f8fa !important;
+}
+
+.service-11 .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+}
+
+.service-11 .card.card-shadow {
+    -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.service-11 .wrap-service11-box {
+  margin-top: 60px;
+}
+
+.service-11 .wrap-service11-box .icon-space {
+  margin: -70px 0 20px;
+}
+
+.service-11 .wrap-service11-box .icon-space .icon-round {
+  font-size: 45px;
+  color: #ffffff;
+}
+
+.service-11 .bg-success-gradiant {
+    background: #2cdd9b;
+    background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
+    background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+    background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+    background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+}
+
+.service-11 .icon-round {
+		width: 80px;
+    line-height: 80px;
+}
+
+.service-11 .btn-success-gradiant {
+		background: #2cdd9b;
+    background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
+    background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+    background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+    background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+}
+
+.service-11 .btn-success-gradiant:hover {
+		background: #1dc8cc;
+    background: -webkit-linear-gradient(legacy-direction(to right), #1dc8cc 0%, #2cdd9b 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#1dc8cc), to(#2cdd9b));
+    background: -webkit-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
+    background: -o-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
+    background: linear-gradient(to right, #1dc8cc 0%, #2cdd9b 100%);	
+}
+
+.service-11 .btn-md {
+    padding: 15px 45px;
+    font-size: 16px;
+}
+
+.image_with_badge_container {
+    display: inline-block; /* keeps the img with the badge if the img is forced to a new line */
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.badge-on-image {
+    position: absolute;
+    /* bottom: 2px; position where you want it */
+    left: 2px;
+    top:0px;
+    padding: 3px 6px;
+}
+
+
+
+.badge-on-image-bottom {
+    position: absolute;
+   bottom: 0px;   /*position where you want it */
+    left: 2px;
+   
+    padding: 3px 6px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #1b397e;
+  padding: 0 0 25px 0;
+  color: #eee;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  background: #1b397e;
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 26px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+#footer .footer-top .footer-info img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+#footer .footer-top .social-links a {
+  display: inline-block;
+  background: #ffffff;
+  color: #222636;
+  line-height: 1;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .footer-top .social-links a i {
+  line-height: 0;
+  font-size: 16px;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #0a075f;
+  color: #fff;
+}
+
+#footer .footer-top h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #0a075f;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 5px;
+  color: #0a075f;
+  font-size: 18px;
+}
+
+#footer .footer-top .footer-links ul li {
+  border-bottom: 1px solid #262c44;
+  padding: 10px 0;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #eee;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #0a075f;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact p {
+  line-height: 26px;
+}
+
+#footer .footer-top .footer-newsletter {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-newsletter input[type=email] {
+  border: 0;
+  padding: 6px 8px;
+  width: 65%;
+}
+
+#footer .footer-top .footer-newsletter input[type=submit] {
+  background: #0a075f;
+  border: 0;
+  width: 35%;
+  padding: 6px 0;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#footer .footer-top .footer-newsletter input[type=submit]:hover {
+  background: #e0072f;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  text-align: center;
+  font-size: 13px;
+  color: #ddd;
+}
+ 
+
+    </style>
+ 
+  </head>
+  <body>
+  <!--Main Navigation-->
+<header>
+  <!-- Jumbotron -->
+ 
+<nav class="navbar navbar-expand-lg bg-body-tertiary p-3 text-center bg-white border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html">EventMarkett</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;"> 
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a></li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact</a></li>
+            
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./expert.html">Experts</a></li>
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li> 
+       </ul>    
+      <a href="#" class="text-dark me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i class="bi bi-person-circle m-1 me-md-2"></i><p class="d-none d-md-block mb-0">Sign in</p> </a>
+    </div>
+  </div>
+</nav>
+
+
+
+  <!-- Jumbotron -->
+
+ 
+</header>
+
+<!-- sidebar + content -->
+<section class="">
+  <div class="container">
+    <div class="row">    
+      <!-- content -->
+      <div class="col-lg-12">
+  <br>
+         
+ 
+ <h4 class="fw-bold text-center"> Add To Market</h4>
+ 
+<form>
+ <div class="row">
+  <div class="col-lg-6"> <div class="row mb-3">
+    <label for="inputfullname" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputfullname">
+    </div>
+  </div>
+</div>
+<div class="col-lg-6">
+   <div class=" mb3">
+    <div class="row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3">
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+ </div>
+
+ <br>
+ <div class="row">
+  <div class="col-lg">
+    <div class="form-floating mb3">
+      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+        <option selected>Event Category</option> 
+        <option value="">Lorem ipsum dolor </option>
+        <option value="">Lorem ipsum dolor</option>
+        <option value="">Lorem ipsum dolor</option>
+        <option value="">Lorem ipsum dolorr</option> 
+      
+      </select>
+      <label for="floatingSelect">Select Event Type</label>
+    </div>
+  </div>
+
+  <div class="col-lg"><div class="row mb-3">
+      <label for="inputContact" class="col-sm-2 col-form-label">Contact</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputContact">
+      </div>
+    </div></div>  
+ </div>
+ 
+ 
+
+<br>
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+    <label for="floatingTextarea">Description</label>
+  </div>
+<br>
+ 
+<h5 class="fw-bold">Upload Event Images Below, minimum image should be 2</h5>
+    
+<p class="text-center">
+  <i class="bi bi-cloud-upload-fill" style="font-size: 100px;"></i>
+  <input type="file"  name="" id="" >
+</p>
+
+<br>
+  <br>
+  <button type="submit" class="btn btn-lg d-inline-block btn-success w-100 ">Submit</button>
+</form>
+        <hr/>
+
+        <!-- Pagination -->
+        <!-- <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-3">
+          <ul class="pagination">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav> -->
+        <!-- Pagination -->
+      </div>
+    </div>
+  </div>
+</section>
+ 
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <div id="logo" class="me-auto">
+              <!-- Uncomment below if you prefer to use a text logo -->
+              <h1><a href="index.html" class="text-white">Event<span>Markett</span></a></h1>
+              <!-- <a href="index.html" class="scrollto"><h3 class="fw-bold" style="color:#f82249">EventMarkett</h3> </a> -->
+            </div>
+            <p>
+              Eventmarkett is a global self-service events platform that allows anyone to create, share, find and attend events that fuel their passions and enrich their lives.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Plan Events</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Create and Setup</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Sell Tickets</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Generate Tickets</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Send Bulk Messages</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Online Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>EventMarkett</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Contact Us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Hatso- Accra, <br>
+              North-Legon<br>
+              Ghana <br>
+              <strong>Phone:</strong> +233 559 885 933<br>
+              <strong>Email:</strong> eventmarkett@gmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>EventMarkett</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EventMarkett
+      -->
+        <!-- Designed by <a href="#">Theoport</a> -->
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+ <!-- Vendor JS Files -->
+ <script src="assets/vendor/aos/aos.js"></script>
+ <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+ <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+ <script src="assets/vendor/php-email-form/validate.js"></script>
+ 
+  <!-- Template Main JS File -->
+  <!-- <script src="assets/js/main.js"></script> -->
+    </body>
+</html>

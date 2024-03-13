@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>TheEvent Bootstrap Template - Speaker Details</title>
+  <title>TheEvent Bootstrap Template - Item Details</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -38,47 +38,30 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center header-inner">
+   
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
     <div class="container-fluid container-xxl d-flex align-items-center">
 
       <div id="logo" class="me-auto">
         <!-- Uncomment below if you prefer to use a text logo -->
-        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-        <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a>
+        <h1><a href="index.html">Event<span>Markett</span></a></h1>
+        <!-- <a href="index.html" class="scrollto"><h3 class="fw-bold" style="color:#f82249">EventMarkett</h3> </a> -->
       </div>
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
+      <nav id="navbar" class="navbar order-last order-lg-0 navbar-expand-xl">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
-          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
-          <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
-          <li><a class="nav-link scrollto" href="#hotels">Hotels</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="#">Drop Down 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
-                <li><a href="#">Deep Drop Down 1</a></li>
-                <li><a href="#">Deep Drop Down 2</a></li>
-                <li><a href="#">Deep Drop Down 3</a></li>
-                <li><a href="#">Deep Drop Down 4</a></li>
-                <li><a href="#">Deep Drop Down 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Drop Down 2</a></li>
-            <li><a href="#">Drop Down 3</a></li>
-            <li><a href="#">Drop Down 4</a></li>
-          </ul>
-        </li> -->
+          <li><a class="nav-link scrollto active" href="#topevent">Events</a></li>
+          <li><a class="nav-link scrollto" href="./marketplace.html">Market</a></li>
+        
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="./wishlist.html"> Join The Waitlist Now!!</a></li>
+          <li><a class="buy-tickets scrollto btn p-2 text-white text-center" href="#buy-tickets">Login</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-      <a class="buy-tickets scrollto" href="#buy-tickets">Buy Tickets</a>
+      </nav>
+      <!-- navbar -->
+     
 
     </div>
   </header><!-- End Header -->
@@ -89,28 +72,24 @@
     <section id="speakers-details">
       <div class="container">
         <div class="section-header">
-          <h2>Speaker Details</h2>
+          <h2>Item Details</h2>
           <p>Praesentium ut qui possimus sapiente nulla.</p>
         </div>
 
         <div class="row">
           <div class="col-md-6">
-            <img src="assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
+            <img src="assets/img/3.jpg" alt="Speaker 1" class="img-fluid">
           </div>
 
           <div class="col-md-6">
             <div class="details">
               <h2>Brenden Legros</h2>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-              <p>Voluptatem perferendis sed assumenda voluptatibus. Laudantium molestiae sint. Doloremque odio dolore dolore sit. Quae labore alias ea omnis ex expedita sapiente molestias atque. Optio voluptas et.</p>
-
-              <p>Aboriosam inventore dolorem inventore nam est esse. Aperiam voluptatem nisi molestias laborum ut. Porro dignissimos eum. Tempore dolores minus unde est voluptatum incidunt ut aperiam.</p>
-
+          
+              <small class="card-text"><strong>Price:</strong> Varying</small>
+              <br>
+              <small class="card-text"><strong>Location:</strong> East Legon</small>
+              <br>
+          
               <p>Et dolore blanditiis officiis non quod id possimus. Optio non commodi alias sint culpa sapiente nihil ipsa magnam. Qui eum alias provident omnis incidunt aut. Eius et officia corrupti omnis error vel quia omnis velit. In qui debitis autem aperiam voluptates unde sunt et facilis.</p>
             </div>
           </div>
@@ -121,7 +100,7 @@
     </section>
 
   </main><!-- End #main -->
-
+ 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
@@ -129,27 +108,33 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <img src="assets/img/logo.png" alt="TheEvenet">
-            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+            <div id="logo" class="me-auto">
+              <!-- Uncomment below if you prefer to use a text logo -->
+              <h1><a href="index.html" class="text-white">Event<span>Markett</span></a></h1>
+              <!-- <a href="index.html" class="scrollto"><h3 class="fw-bold" style="color:#f82249">EventMarkett</h3> </a> -->
+            </div>
+            <p>
+              Eventmarkett is a global self-service events platform that allows anyone to create, share, find and attend events that fuel their passions and enrich their lives.
+            </p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Plan Events</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Create and Setup</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Sell Tickets</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Generate Tickets</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Send Bulk Messages</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Online Events</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>EventMarkett</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Contact Us</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
@@ -158,11 +143,11 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Hatso- Accra, <br>
+              North-Legon<br>
+              Ghana <br>
+              <strong>Phone:</strong> +233 559 885 933<br>
+              <strong>Email:</strong> eventmarkett@gmail.com<br>
             </p>
 
             <div class="social-links">
@@ -181,16 +166,16 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
+        &copy; Copyright <strong>EventMarkett</strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!--
         All the links in the footer should remain intact.
         You can delete the links only if you purchased the pro version.
         Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EventMarkett
       -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- Designed by <a href="#">Theoport</a> -->
       </div>
     </div>
   </footer><!-- End  Footer -->
